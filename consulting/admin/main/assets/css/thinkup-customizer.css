@@ -17,6 +17,10 @@
 	margin: 0 !important;
 	border-top: 0 !important;
 }
+.accordion-section .accordion-section-title .accordion-trigger {
+    height: auto !important;
+}
+
 [id*="thinkup_customizer_section"] .customize-section-description-container {
 	margin-bottom: 0;
 }
@@ -32,6 +36,8 @@
 }
 [id*="thinkup_customizer_section"] li.customize-control .customize-control-description {
 	font-style: normal !important;
+	margin-left: 0;
+	margin-top: 5px;
 	margin-bottom: 10px;
 }
 [id*="thinkup_customizer_section"].accordion-section-content,
@@ -40,10 +46,10 @@
 }
 
 /* Add icon to "Theme Options" tab */
-#customize-controls [id*="thinkup_customizer_section_themeoptions"] > h3:before {
+#customize-controls [id*="thinkup_customizer_section_themeoptions"] > .accordion-section-title > button:before {
 	content: '\f0ad';
 	font-family: fontawesome;
-	padding-right: 5px
+	padding-right: 8px;
 }
 
 /* Change "Save & Publish" button color to be grey */
@@ -54,7 +60,7 @@
     background: #f7f7f7 !important;
     -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
     box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
-    vertical-align: top !important;	
+    vertical-align: top !important;
 }
 .wp-core-ui #customize-header-actions .button-primary.focus,
 .wp-core-ui #customize-header-actions .button-primary.hover,
@@ -84,7 +90,7 @@
     background: #f7f7f7 !important;
     -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
     box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
-    vertical-align: top !important;	
+    vertical-align: top !important;
 }
 
 
@@ -93,17 +99,18 @@
 ---------------------------------------------------------------------------- */
 
 /* Section - Social Media */
-[id*="thinkup_customizer_section_socialmedia"] [id$="link"],
-[id*="thinkup_customizer_section_socialmedia"] [id$="iconswitch"] {
+[id*="thinkup_customizer_section_socialmedia"] li[id$="link"],
+[id*="thinkup_customizer_section_socialmedia"] li[id$="iconswitch"] {
 	border-bottom: none !important;
 	padding-bottom: 5px !important;
 }
 
 /* Section - Homepage (Featured) */
-[id*="thinkup_customizer_section_homepagefeatured"] [id$="_icon"],
-[id*="thinkup_customizer_section_homepagefeatured"] [id$="_title"],
-[id*="thinkup_customizer_section_homepagefeatured"] [id$="_desc"] {
-	border-bottom: none !important;	
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_image"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_icon"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_title"],
+[id*="thinkup_customizer_section_homepagefeatured"] li[id$="_desc"] {
+	border-bottom: none !important;
 	padding-bottom: 5px !important;
 }
 

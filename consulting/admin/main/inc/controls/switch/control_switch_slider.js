@@ -8,7 +8,7 @@ jQuery( document ).ready( function() {
 		// 1. SLIDER RADIO BUTTONS
 		// ----------------------------------------------------------------------------------------------------------
 
-		jQuery( 'body.wp-customizer [id*="thinkup_homepage_sliderswitch"] input:radio' ).click(function(e){ 
+		jQuery( 'body.wp-customizer [id*="thinkup_homepage_sliderswitch"] input:radio' ).click(function(e){
 			jQuery( this ).closest( 'li' ).find( 'label' ).removeClass( 'checked' );
 			jQuery( this ).closest( 'label' ).addClass( 'checked' );
 		});
@@ -18,22 +18,25 @@ jQuery( document ).ready( function() {
 		// 2. SLIDER RADIO TOGGLE
 		// ----------------------------------------------------------------------------------------------------------
 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_info"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_image"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_title"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_desc"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_link"]' ).css( 'display', '' );
 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_info"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_image"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_title"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_desc"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_link"]' ).css( 'display', '' );
 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_info"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_image"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_title"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_desc"]' ).css( 'display', '' );
 		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_link"]' ).css( 'display', '' );
 
-		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_info"]' ).click(function(e){ 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_info"]' ).click(function(e){
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_image"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_title"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage1_desc"]' ).fadeToggle(300);
@@ -42,11 +45,11 @@ jQuery( document ).ready( function() {
 			if ( jQuery ( this ).hasClass( 'sliderimage_open' ) ) {
 				jQuery( this).removeClass( 'sliderimage_open' );
 			} else {
-				jQuery( this).addClass( 'sliderimage_open' );				
+				jQuery( this).addClass( 'sliderimage_open' );
 			}
 		});
 
-		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_info"]' ).click(function(e){ 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_info"]' ).click(function(e){
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_image"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_title"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage2_desc"]' ).fadeToggle(300);
@@ -55,11 +58,11 @@ jQuery( document ).ready( function() {
 			if ( jQuery ( this ).hasClass( 'sliderimage_open' ) ) {
 				jQuery( this).removeClass( 'sliderimage_open' );
 			} else {
-				jQuery( this).addClass( 'sliderimage_open' );				
+				jQuery( this).addClass( 'sliderimage_open' );
 			}
 		});
 
-		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_info"]' ).click(function(e){ 
+		jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_info"]' ).click(function(e){
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_image"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_title"]' ).fadeToggle(300);
 			jQuery( 'body.wp-customizer li[id*="thinkup_homepage_sliderimage3_desc"]' ).fadeToggle(300);
@@ -68,7 +71,7 @@ jQuery( document ).ready( function() {
 			if ( jQuery ( this ).hasClass( 'sliderimage_open' ) ) {
 				jQuery( this).removeClass( 'sliderimage_open' );
 			} else {
-				jQuery( this).addClass( 'sliderimage_open' );				
+				jQuery( this).addClass( 'sliderimage_open' );
 			}
 		});
 

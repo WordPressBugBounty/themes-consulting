@@ -24,13 +24,16 @@ body.wp-customizer #accordion-section-themes .accordion-section-title {
 
 /* Change "Upgrade (10% off)" tab hover color */
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section > h3.accordion-section-title,
+#customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section > h3.accordion-section-title .accordion-trigger,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section:hover > h3.accordion-section-title,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section h3.accordion-section-title:hover,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section.open h3.accordion-section-title,
+#customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section.open h3.accordion-section-title .accordion-trigger,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-section h3.accordion-section-title:focus,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-panel:hover > h3.accordion-section-title,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-panel h3.accordion-section-title:hover,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-panel.open h3.accordion-section-title,
+#customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-panel.open h3.accordion-section-title .accordion-trigger,
 #customize-theme-controls [id*="thinkup_customizer_section_upgrade_inner"].control-panel h3.accordion-section-title:focus {
     color: #fff !important;
     background: #0067CE !important;
