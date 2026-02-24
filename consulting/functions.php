@@ -6,7 +6,7 @@
  */
 
 // Declare latest theme version
-$GLOBALS['consulting_thinkup_theme_version'] = '1.5.0';
+$GLOBALS['consulting_thinkup_theme_version'] = '1.5.1';
 
 // Setup content width
 function consulting_thinkup_content_width() {
