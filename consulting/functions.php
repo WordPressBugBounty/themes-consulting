@@ -6,7 +6,7 @@
  */
 
 // Declare latest theme version
-$GLOBALS['consulting_thinkup_theme_version'] = '1.5.1';
+$GLOBALS['consulting_thinkup_theme_version'] = '1.6.0';
 
 // Setup content width
 function consulting_thinkup_content_width() {
@@ -22,6 +22,9 @@ add_action( 'after_setup_theme', 'consulting_thinkup_content_width', 0 );
 	// Add Cusomizer Framework
 	require_once( get_template_directory() . '/admin/main/framework.php' );
 	require_once( get_template_directory() . '/admin/main/options.php' );
+
+	// Add Panels Framework
+	require_once( get_template_directory() . '/admin/main-panels/panels.php' );
 
 	// Add Toolbox Framework
 	require_once( get_template_directory() . '/admin/main-toolbox/toolbox.php' );

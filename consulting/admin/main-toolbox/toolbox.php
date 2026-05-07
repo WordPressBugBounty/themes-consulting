@@ -30,7 +30,7 @@ function thinkup_toolbox_setup() {
 
 	} catch (\Throwable $th) {
 
-		// Exit early on errro
+		// Exit early on error
 		return;
 	}
 
