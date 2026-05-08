@@ -8,7 +8,7 @@
         // Exit if sidebar not ready OR box already exists
         if (!sidebar || document.querySelector('#thinkup-panel-upgrade-classic')) return;
 
-	// Get parent theme name
+		// Get parent theme name
 		let themeName = (typeof thinkupData !== 'undefined' && thinkupData.themeName) ? thinkupData.themeName : '';
 
 		// Get theme name from body class if not passed in JS

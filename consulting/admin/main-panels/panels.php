@@ -3,6 +3,13 @@
 // Output on classic pages
 function thinkup_panels_setup_classic( $hook ) {
 
+    // Do not load on Gutenberg
+    if ( function_exists( 'wp_should_load_block_editor_scripts_and_styles' ) ) {
+        if ( wp_should_load_block_editor_scripts_and_styles() ) {
+            return;
+        }
+    }
+
     // Only load on classic editor post/page edit screens
     if ( $hook !== 'post.php' && $hook !== 'post-new.php' ) {
         return;
